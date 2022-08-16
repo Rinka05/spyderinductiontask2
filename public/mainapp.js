@@ -14,6 +14,19 @@ const santasdb = {
     email: String,
     password: String
 }
+app.post("/", function (req, res) {
+    let newdata = new data({
+        name: req.body.name,
+        contactnum: req.body.phoneno,
+        address: req.body.address,
+        date: req.body.date,
+        email: req.body.email,
+        password: req.body.password
+    })
+    newdata.save();
+    
+    res.redirect("/")
+})
 // mongoose model based on schema
 const santas = mongoose.model("santas" ,santasdb);
 app.get("/.exchange.html" , function(req,res){
@@ -24,10 +37,10 @@ app.post("/exchange.html" ,function(req ,res){
 })
 
 const santa1 = new santas({
-    name:"Rinka hu me🤶🏻"
+    name:"santa1"
 })
 const santa2 = new santas({
-    name:"pahchana Yashaswini hu me🤶🏻"
+    name:"santa2"
 })
 const defaultsanta =[santa1 ,santa2];
 santas.insertMany(defaultsanta ,function(req ,res){
