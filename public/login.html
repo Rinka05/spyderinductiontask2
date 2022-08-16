@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #b68edd;
+        font-family: "Roboto", sans-serif;
+        color: #ffff;
+        text-align: center;
+      }
+      .h1 {
+        color: brown;
+        margin: 30px;
+      }
+      .box {
+        font-family: "Lato", Calibri, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: 3px solid #ebe6e2;
+        border-radius: 5px;
+        transition: all 0.3s ease-out;
+        padding: 5px;
+        margin-top: 10px;
+        height: 10vh;
+      }
+      .name {
+        height: 10vh;
+        width: 20vh;
+      }
+      .container {
+        position: relative;
+        padding: 50px;
+        border-radius: 10px solid black;
+        height: 10vh;
+      }
+      
+      input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #F4ABC4;
+        height: 20px;
+        width: 300px;
+        padding: 15px 15px;
+        border-radius: 10px;
+        margin: 0 auto 0 auto;
+      }
+      .submitbtn{
+        height: 20px;
+        width: 185px;
+        padding: 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: 0 auto 0 auto;
+        border: 5px solid #F4ABC4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 main">
+          <form action="/sign_up" method="POST">
+            <h2>Secret Santa login🤶🏻</h2>
+            <input
+              type="text"
+              calss="box"
+              id="name"
+              name="name"
+              placeholder="name"
+            />
+            <br />
+            <input
+              type="text"
+              calss="box"
+              id="phoneno"
+              name="phoneno"
+              placeholder="Contact Number"
+            />
+            <br />
+            <input
+              type="text"
+              calss="box"
+              id="address"
+              name="address"
+              placeholder="Address"
+            />
+            <br />
+            <input
+              type="date"
+              calss="box"
+              id="date"
+              name="date"
+              placeholder="Date"
+            />
+            <br />
+            <input
+              type="text"
+              calss="box"
+              id="budget"
+              name="budget"
+              placeholder="budget"
+            />
+            <br />
+
+            <input
+              type="text"
+              calss="box"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              width
+              :58px;
+            />
+            <br />
+            <input
+              type="text"
+              calss="box"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <br />
+          <a href ="signup_success.html">  
+            <button  type ="submit" class = "submitbtn" >Login</button>
+          </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
